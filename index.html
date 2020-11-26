@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <title>Super Calculator</title>
+</head>
+
+<body>
+  <div class="container">
+
+    <h4 style="text-align: center;">Super Calculator</h4>
+
+    <!-- PEGAR OS VALORES -->
+    <form>
+      <div class="row">
+        <div class="row">
+          <div class="input-field col s6">
+            <input id="num1" type="number" class="validate">
+            <label for="num1">Primeiro número (A)</label>
+          </div>
+          <div class="input-field col s6">
+            <input id="num2" type="number" class="validate">
+            <label for="num2">Segundo número (B)</label>
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <h5 style="text-align: center;">Cálculos</h5>
+
+    <!-- VISOR DAS OPERAÇÕES -->
+    <div class="row">
+      <div class="row">
+        <div class="input-field col s4">
+          <input placeholder="" id="sum" type="number" readonly>
+          <label for="sum">Soma (A + B)</label>
+        </div>
+        <div class="input-field col s4">
+          <input placeholder="" id="sub1" type="number" readonly>
+          <label for="sub1">Subtração (A - B)</label>
+        </div>
+        <div class="input-field col s4">
+          <input placeholder="" id="sub2" type="number" readonly>
+          <label for="sub2">Subtração (B - A)</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s4">
+          <input placeholder="" id="multi" type="number" readonly>
+          <label for="multi">Multiplicação (A x B)</label>
+        </div>
+        <div class="input-field col s4">
+          <input placeholder="" id="div1" type="number" readonly>
+          <label for="div1">Divisão (A ÷ B)</label>
+        </div>
+        <div class="input-field col s4">
+          <input placeholder="" id="div2" type="number" readonly>
+          <label for="div2">Divisão (B ÷ A)</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s4">
+          <input placeholder="" id="quad1" type="number" readonly>
+          <label for="quad1">Quadrado de A (A²)</label>
+        </div>
+        <div class="input-field col s4">
+          <input placeholder="" id="quad2" type="number" readonly>
+          <label for="quad2">Quadrado de B (B²)</label>
+        </div>
+        <div class="input-field col s4">
+          <input placeholder="" id="divint1" type="text" readonly>
+          <label for="divint1">Divisores inteiros de A</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s4">
+          <input placeholder="" id="divint2" type="text" readonly>
+          <label for="divint2">Divisores inteiros de B</label>
+        </div>
+        <div class="input-field col s4">
+          <input placeholder="" id="fat1" type="text" readonly>
+          <label for="fat2">Fatorial de A (A!)</label>
+        </div>
+        <div class="input-field col s4">
+          <input placeholder="" id="fat2" type="text" readonly>
+          <label for="fat2">Fatorial de B (B!)</label>
+        </div>
+      </div>
+    </div>
+
+</body>
+<script src="script.js"></script>
+
+</html>
